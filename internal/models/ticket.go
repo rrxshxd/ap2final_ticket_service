@@ -20,6 +20,7 @@ type Ticket struct {
 	UserID        string       `bson:"-"`
 	PurchaseTime  time.Time    `bson:"-"`
 	PaymentMethod string       `bson:"-"`
+	PaymentID     *string      `bson:"-"`
 	CreatedAt     time.Time    `bson:"-"`
 	UpdatedAt     time.Time    `bson:"-"`
 }
@@ -39,5 +40,10 @@ type TicketUpdateData struct {
 	Status        *TicketStatus
 	PaymentMethod *string
 	PurchaseTime  *time.Time
+	PaymentID     *string
 	Price         *float64
 }
+
+// Helpers for creating pointers
+func (ts TicketStatus) Ptr() *TicketStatus { return &ts }
+func TimePtr(t time.Time) *time.Time       { return &t }

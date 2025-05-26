@@ -4,11 +4,12 @@ import "errors"
 
 var (
 	// Ticket related errors
-	ErrTicketNotFound    = errors.New("Ticket not found")
-	ErrTicketAlreadyPaid = errors.New("Ticket already paid")
-	ErrTicketNotReserved = errors.New("Ticket not reserved")
-	ErrTicketExpired     = errors.New("Ticket reservation has expired")
-	ErrTicketCancelled   = errors.New("Ticket has been cancelled")
+	ErrTicketNotFound      = errors.New("Ticket not found")
+	ErrTicketAlreadyPaid   = errors.New("Ticket already paid")
+	ErrTicketAlreadyExists = errors.New("Ticket already exists")
+	ErrTicketNotReserved   = errors.New("Ticket not reserved")
+	ErrTicketExpired       = errors.New("Ticket reservation has expired")
+	ErrTicketCancelled     = errors.New("Ticket has been cancelled")
 
 	// Seat/session related errors
 	ErrSeatAlreadyTaken  = errors.New("Seat already taken")
@@ -28,4 +29,7 @@ var (
 
 	// Validation errors
 	ErrInvalidTicketData = errors.New("Invalid ticket data")
+
+	// User related errors
+	ErrInvalidUserID = errors.New("Invalid user ID")
 )

@@ -1,0 +1,17 @@
+env: "local"
+
+mongo:
+  database: "tickets"
+  uri: "localhost:27017"
+
+redis:
+  host: "localhost"
+  port: "6379"
+  password: ""
+  db: 0
+  ttl: "24h"
+
+server:
+  grpc:
+    port: 9999
+    timeout: 10h
