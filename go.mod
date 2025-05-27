@@ -1,4 +1,4 @@
-module ap2final_ticket_service
+module github.com/rrxshxd/ap2final_ticket_service
 
 go 1.23.0
 
@@ -8,8 +8,8 @@ require (
 	github.com/fatih/color v1.18.0
 	github.com/golang-jwt/jwt/v5 v5.2.2
 	github.com/ilyakaznacheev/cleanenv v1.5.0
-	github.com/sorawaslocked/ap2final_base v1.0.10
-	github.com/sorawaslocked/ap2final_protos_gen v1.0.3
+	github.com/sorawaslocked/ap2final_base v1.0.13
+	github.com/sorawaslocked/ap2final_protos_gen v1.0.5
 	go.mongodb.org/mongo-driver v1.17.3
 	golang.org/x/crypto v0.38.0
 	google.golang.org/grpc v1.72.2
@@ -23,7 +23,7 @@ require (
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.3.2 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
-	github.com/klauspost/compress v1.16.7 // indirect
+	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
